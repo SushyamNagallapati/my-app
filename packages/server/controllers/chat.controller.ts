@@ -5,7 +5,6 @@ import z from 'zod';
 // Implementation detail
 const chatSchema = z.object({
    prompt: z
-
       .string()
       .trim() // to get rid of white spaces at the beginning or end of the string
       .min(1, 'Prompt is required.')
